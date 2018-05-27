@@ -7,7 +7,7 @@ import { CountriesViewComponent } from './countries-view/countries-view.componen
 import {SingleCountryViewComponent} from './single-country-view/single-country-view.component';
 import { HomeComponent } from './home/home.component';
 import {NotFoundComponent} from './not-found/not-found.component';
-import { WorldService } from './world.service';
+
 import { WorldHttpService } from './world-http.service';
 import {HttpClientModule} from '@angular/common/http';
 
@@ -32,7 +32,7 @@ import {HttpClientModule} from '@angular/common/http';
      
     ])
   ],
-  providers: [WorldService,WorldHttpService],
+  providers: [WorldHttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
